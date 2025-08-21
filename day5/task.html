@@ -9,37 +9,129 @@
             position: fixed;
             top: 0px;
             width: 100%;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid white;
             background-color: aliceblue;
+            z-index: 1000;
         }
         .navbar>h1,p{           
             display: inline-block;   
         }
         .navbar>p{
-            margin-left: 30px;
+            margin-left:15px;
+        }
+        .img1{
+           width:100%;
+          
         }
         .img1 p{
             margin-top: 0%;       
             height: 2%;
             position: absolute;
-
-
-
+        }
+        .brr{
+            position: absolute;
+            top: 50%;
+            right: 40%;
+            font-size: 3em;
             
         }
+        .projects{
+            margin-top: 5%;
+            display: inline-block;
+            width: 100%;
+        }
+        .projects>.img12{
+            width: 20%;
+            display: inline-block;
+            margin-left: 30px;
+            position:relative;
+           
+        }
+        .img12>img{
+            height: 250px;
+            /* position:relative; */
+            /* margin-left: 30px; */
+            width: 100%;
+        }
+        .img12 p{
+            display: inline-block;
+            position:absolute;
+            left: 0;
+            top:0;
+            margin-top: 0;
+            margin-left: 0;
+            background-color: black;
+            color: white;
+            padding:0 5px ;
+        }
+        .down{
+            margin-top: 5%;
+            width:100%;
+            position: relative;
+        }
+        .down>.img22{
+            width: 20%;
+            display: inline-block;
+            margin-left:30px;
+
+        }
+        .img22 img{
+            width:100%;
+            height:250px;
+            
+
+        }
+
+
+
+
     </style>
 </head>
 <body>
     <div class="navbar">
        <h1>Br Architecture</h1>
         <p style="margin-left: 70%;">Projects</p>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
+        <p>About</p>
+        <p>Contact</p>
     </div>
     <div class="img1">
         <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
-         <p>br architecture</p>
+         <p class="brr"><b style="background-color: rgba(20, 20, 20, 0.416); color: white; padding-right:10px; padding-left: 10px;">Br</b> architecture</p>
     </div>
-    
+<section>
+    <div class="projects">
+        <h2>projects</h2>
+        <div class="img12">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <p>summer house</p>
+        </div>
+        <div class="img12">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+             <p>summer house</p>
+        </div>
+        <div class="img12">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+             <p>summer house</p>
+        </div>
+        <div class="img12">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+             <p>summer house</p>
+        </div>
+    </div>
+    <div class="down">
+        <div class="img22">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+        </div>
+        <div class="img22">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+        </div>
+        <div class="img22">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+        </div>
+        <div class="img22">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+        </div>
+    </div>
+</section>
 </body>
 </html>

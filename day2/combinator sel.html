@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .parent>h2{
+            color: blue;
+            background-color: aqua;
+        }
+        h3{
+            color:chartreuse
+        }
+        h3+h4{
+            color:deeppink;   
+        }
+        h5+h6{
+            color:brown;
+            background-color:chartreuse;
+        }
+        .child+.parent2{
+            background-color: aquamarine;
+            font-size: 300%;
+        }
+        .parent2>h5{
+            color: rgb(165, 16, 16);
+            background-color: blue;
+        }
+        .parent~h1,h3{
+            color:cornflowerblue;
+            background-color: burlywood;
+        }
+        .parent h3{
+            color: fuchsia;
+            background-color: burlywood;
+        }
+        .child + .parent2{
+            color: rgba(0, 4, 227, 0.742);
+        }
+        h3,h4{
+            color: springgreen;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="parent">
+    <h1>sunflower</h1>
+    <h2>rose</h2>
+    <h3>lotus</h3>
+    <div class="child">
+        <h3>sun flower</h3>
+        <h4>lilly</h4>
+     <div class="child2">
+        <h4>mari gold</h4>
+     </div>
+    </div>
+    <div class="parent2">
+        <h5>hibiscus</h5>
+        <h6>jasmin</h6>
+        <h6>blue bell</h6>
+    </div>
+    
+  </div>  
+  
+</body>
+</html>
