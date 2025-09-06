@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+          
+            display: grid;
+             grid-template-areas: 
+             'img1 img2 img3 img4'
+            'img1 img2 img3 img4'
+            'img1 img6 img7 img4'
+            'img5 img6 img7 img8'
+            'img5 img6 img11 img8'
+            'img9 img10 img11 img13'
+            'img9 img10 img12 img13';
+            ;
+            height: 100vh;
+            width: 100vh;
+            place-content: center;
+            margin-left: 14%;
+        }
+       .img1{
+        grid-area: img1;
+       }
+       .img2{
+         grid-area: img2;
+       }
+       .img3{
+        grid-area: img3;
+       }
+       .img4{
+        grid-area: img4;
+       }
+       .img5{
+        grid-area: img5;
+       }
+        .img6{
+        grid-area: img6;
+       }
+       .img7{
+        grid-area: img7;
+       }
+       .img8{
+        grid-area: img8;
+       }
+       .img9{
+        grid-area: img9;
+       }
+       .img10{
+        grid-area: img10;
+       }
+       .img11{
+        grid-area: img11;
+       }
+       .img12{
+        grid-area: img12;
+       }
+       .img13{
+        grid-area: img13;
+       }
+       .parent img{
+        height: 100%;
+        width: 100%;
+        margin-left: 25vh;
+       }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="./cat1.jpg" alt="" class="img1">
+        <img src="./cat2.jpg" alt="" class="img2">
+        <img src="./cat3.jpg" alt="" class="img3">
+        <img src="./cat4.jpg" alt="" class="img4">
+        <img src="./cat5.jpeg" alt="" class="img5">
+        <img src="./cat6.jpeg" alt="" class="img6">
+        <img src="./cat7.jpeg" alt="" class="img7">
+        <img src="./cat8.jpeg" alt="" class="img8">
+        <img src="./cat9.jpeg" alt="" class="img9">
+        <img src="./cat10.jpg" alt="" class="img10">
+        <img src="./cat11.jpeg" alt="" class="img11">
+        <img src="./cat12.avif" alt="" class="img12">
+        <img src="./cat13.jpeg" alt="" class="img13">
+    </div>
+</body>
+</html>
