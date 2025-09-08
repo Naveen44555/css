@@ -64,7 +64,57 @@
         height: 100%;
         width: 100%;
         margin-left: 25vh;
+        
        }
+       @media screen and (min-width:320px) and (max-width:426px){
+        .parent{ 
+            display: grid;
+             grid-template-areas: 
+            'img1 img1'
+            'img2 img3'         
+             'img2 img3'
+             'img4 img4'
+             'img4 img4'
+            'img5 img6'
+             'img5 img6'
+             'img7 img8'
+            'img7 img8'
+            'img9 img10'
+            'img9 img10'
+             'img11 img12'
+            'img13 img13';
+            height: auto;
+            width: auto;
+            margin-left: -200px;
+            padding: 50px 20px;
+            justify-content: center;
+            
+        }
+       }
+       @media screen and (min-width:426px) and (max-width:769px){
+         .parent{ 
+            display: grid;
+             
+            height: auto;
+            width: auto;
+             margin-left: -150px;
+            place-content: center;
+         
+        }
+        @media screen and  (min-width: 769) and (max-width:1081px){
+                .parent{ 
+            display: grid;
+             
+            height: auto;
+            width: auto;
+             margin-left: -300px;
+            place-content: center;
+         
+        }
+        }
+            
+        
+    }
     </style>
 </head>
 <body>
