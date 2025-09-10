@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .parent{
+        body{
             width: 100%;
-            margin-left: 1%;
+        }
+        
+        .p-c,.p1-c{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
         .child:hover{
             transform: rotate(360deg);
@@ -16,7 +21,8 @@
         .child{
             display: inline-block;
             width: 20%;
-            margin-left: 4%;    
+            margin-left: 4%; 
+            margin: auto;   
         }
         .child img{
             width: 100%;
@@ -24,44 +30,178 @@
         .parent1{
             margin-top: 3%;
         }
+        .parent,.parent1, .parent2,.parent3{
+            width: 100%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
         .parent2 img{
             width: 50%;
-            margin-left: 25%;
+            display: flex;
+           margin: auto;
         }
         .parent2 img:hover{
             transform: scaleX(1.5);
             transition: 2s;
         }
         .parent2 h3{
-            margin-left: 45%;
+         
+            text-align: center;
             width: 100%;
         }
         .parent2 p{
-        margin-left: 10%;
+        text-align: center;
+        justify-content: center;
         }
-        .parent3{
-            margin-left: 10%;
-            margin-top: 1%;
-        }
-        .parent3>.part1,.part2,.part3{
+   
+       .parent3{
+        display: flex;
+        justify-content: space-evenly;
+           
+       }
+       .part1,.part2,.part3{
+        width: 30%;
+
+       }  
+         .child1,.child2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 200px;
+            margin: 5px;
+            padding: 10px;
+         }
+        
+.part3{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn p{
+    background-color: rgba(128, 128, 128, 0.484);
+    margin: 5px;
+    padding: 3px 30px;
+}
+
+        @media screen and (min-width:320px) and (max-width:426px){
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .child {
+                display: block;
+                width: 300px;
+                margin: auto;
+            
+            }
+            .child h2,p{
+                font-size:smaller;
+            }
+           .parent2 h3{
+                margin: auto;
+                margin-top: 30px;
+                text-align: center;
+           }
+           .parent2 img{
+              margin: auto;
+            width: 300px;
+                height: 210px;       
+                display: flex;
+                justify-items: center;
+          
+           }
+           .parent2{
+            width: 100%;
+           }
+            .parent2 p,.parent3 p{
+                text-align: left;
+                margin: 4px;
+                
+  
+            }
+             /* .parent2 img:hover{
+            transform: scaleX(1.5);
+            transition: 2s;
+        } */
+            
+            
+            .part1,.part2,.part3{
+                display: flex;
+        
+            }
+            .part1,p{
+                width: 45vh;
+                margin-left: o;
+            }
+            .parent3 > .part2{
+                display: block;
+
+            }
+              .part2 {
+                
+                width: 200px;
+            }
+            .part2 > .child1,.child2{
+                display: inline-block;
+                margin:auto;
+            }
+          .child1,.child2{
             display: inline-block;
-            margin-left: 2%;
-            width: 20%;
+          }
+            .child1 p {
+                font-size: large;
+                margin: auto;
+            }
+            .child2 p{
+                 font-size: large;
+                margin: auto;
+            } 
+             /* .part3 {
+               flex-wrap: wrap;
+               display: inline-block;
+            } */
+           .parent3 {
+            display: block;
+
+           } 
+           .parent3 >.part1{
+            display: block;
+           }
+           .part2 .child1,.child2{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 132%;
+           }
+           .part3{
+            width: 100%;
+           }
+           .title h3{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+           }
+           .btn{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.btn p{
+    width: 28px;
+    text-align: center;
+    padding: 3px 20px;
+}
+
         }
-        .parent3>.part2>.child1>p,.child2 >p{
-            display: inline-block;
-           margin-right: 10px;
-           width: 90px;
-        }
-        .parent3>.part3>p{
-            display: inline-block;
-            background-color:darkgrey; 
-        }
+        
     </style>
 </head>
 <body>
     <div class="parent">
-<div class="child">
+        <div class="p-c">
+            <div class="child">
     <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
     <h2>The Perfect Sandwich, A Real NYC Classic</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero?</p>
@@ -74,17 +214,19 @@
     <div class="child">
         <img src="https://www.w3schools.com/w3images/cherries.jpg">
         <h2>The Perfect Sandwich, A Real NYC Classic</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="child">
         <img src="https://www.w3schools.com/w3images/wine.jpg">
         <h2>The Perfect Sandwich, A Real NYC Classic</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas!</p>
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing Voluptas!</p>
     </div>
-    <div class="parent1">
+        </div>
 
-        <div class="child">
+ </div>
+ <div class="parent1">
+    <div class="p1-c">
+          <div class="child">
             <img src="https://www.w3schools.com/w3images/popsicle.jpg">
             <h2>All I Need Is a Popsicle</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae.</p>
@@ -92,7 +234,7 @@
         <div class="child">
             <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="">
             <h2>All I Need Is a Popsicle</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In.</p>
         </div>
         <div class="child">
             <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
@@ -103,7 +245,8 @@
             <img src="https://www.w3schools.com/w3images/croissant.jpg" alt=""><h2>All I Need Is a Popsicle</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi.</p></div>
     </div>
- </div>
+    </div>
+      
  <div class="parent2">
     <h3>About Me, The Food Man</h3>
     <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
@@ -119,18 +262,24 @@
     <div class="part2">
         <h2>blog post</h2>
       <div class="child1">
+        <div>
             <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="" height="50">
-         
-            <p><b>Lorem </b><br>ipsum dolor sitfgdfgdgdg </p>
+            </div>
+            <div>
+            <p><b>Lorem</b> ipsum dolor.</p>
+            </div>
         </div>
         <div class="child2">
             <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="" height="50">
-            
-        <p><b>ipsum</b><br> dolor sitfgdfgdgdg</p>
+        <p><b>Lorem</b> ipsum dolor</p>
         </div>
     </div>
+
     <div class="part3">
-        <h2>popular tags</h2>
+        <div class="title">
+            <h3>POPULAR TAGS</h3>
+        </div>
+        <div class="btn">
         <p>dinner</p>
         <p>travel</p>
         <p>ideas</p>
@@ -140,12 +289,13 @@
         <p>chicken</p>
         <p>fried</p>
         <p>fish</p>
-         <p>france</p>
+        <p>france</p>
         <p>drinks</p>
         <p>clavours</p>
         <p>chicken</p>
         <p>fried</p>
         <p>fish</p>
+        </div>
     </div>
     </div>
     
