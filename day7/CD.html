@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate Circle</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200px;
+    }
+    .c {
+      height: 300px;
+      width: 300px;
+      border-radius: 170px;
+      background:linear-gradient( red,orange,yellow,green,indigo);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: aliceblue;
+      border: 11px red solid;
+       animation: spin 0.2s ease-in infinite;
+    }
+    .center{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: aliceblue;
+    }
+    .c:hover {
+      animation: spin 0.2s linear infinite;
+    }
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);       
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="c">
+    <div class="center">      
+    </div>
+  </div>
+  <div>
+
+  </div>
+</body>
+</html>
