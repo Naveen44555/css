@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            display: flex;
+            color: blue;
+        }
+      .sub{
+        display: none;
+      }.parent{
+        width: 100%;
+        margin-left: 40px;
+      }
+      .parent:hover .sub{
+        color: red;
+        display: block;
+        font-size: large;
+      }
+      .h1{
+        font: size 20vh;;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top">
+            <div class="parent"><h1>Animals</h1>
+                <div class="sub">
+                <p>lion</p>
+                <p>elephant</p>
+                <p>tiger</p>
+                <p>zebra</p>
+            </div>
+           </div>
+        <div class="parent"><h1>colors</h1>
+            <div class="sub">
+                <p>blue</p>
+                <p>RED</p>
+                <p>GREEN</p>
+                <p>YELLOW</p>
+            </div>
+        </div>
+        <div class="parent"><h1>mobiles</h1>
+            <div class="sub">
+                <p>VIVO</p>
+                <p>XIA0MI</p>
+                <p>SAMSUNG</p>
+                <p>OPPO</p>
+            </div>
+        </div>  
+        <div class="parent"><h1>laptops</h1>
+            <div class="sub">
+                <p>Lenovo</p>
+                <p>hp</p>
+                <p>dell</p>
+                <p>Asus</p>
+            </div>
+        </div>
+     
+        </nav>
+</body>
+</html>
